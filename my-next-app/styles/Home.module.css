@@ -5,19 +5,24 @@
   justify-content: center;
   align-items: center;
   font-family: "Courier New", Courier, monospace;
+  background: black;
+  color: white;
 }
 
 .footer {
+  background: black;
+  color: white;
   display: flex;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: none;
   justify-content: center;
   align-items: center;
 }
 
 .image {
+  position: center;
   width: 70%;
-  height: 50%;
+  height: 70%;
   margin-left: 20%;
 }
 
@@ -36,6 +41,7 @@
   border-radius: 4px;
   background-color: blue;
   border: none;
+  border-radius: 20%;
   color: #ffffff;
   font-size: 15px;
   padding: 20px;
