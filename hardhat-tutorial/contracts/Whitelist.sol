@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract Whitelist {
-    uint8 public numWhitelistedAddresses;
+    uint8 public numAddressesWhitelisted;
 
     uint8 public maxWhitelistedAddresses;
 
@@ -18,10 +18,10 @@ contract Whitelist {
             "Address is already whitelisted!"
         );
         require(
-            numWhitelistedAddresses < maxWhitelistedAddresses,
+            numAddressesWhitelisted < maxWhitelistedAddresses,
             "List is already full"
         );
         whitelistedAddresses[msg.sender] = true;
-        numWhitelistedAddresses += 1; 
+        numAddressesWhitelisted += 1; 
     }
 }

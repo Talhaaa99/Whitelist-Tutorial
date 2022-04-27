@@ -75,7 +75,7 @@ export default function Home() {
       abi,
       provider
       );
-    const _numOfWhitelisted = await whitelistContract.numWhitelistedAddresses();
+    const _numOfWhitelisted = await whitelistContract.numAddressesWhitelisted();
     setNumOfWhitelistedAddresses(_numOfWhitelisted);
     } catch(err) {
       console.error(err);
